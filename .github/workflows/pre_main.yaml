@@ -1,0 +1,98 @@
+name: Test Incoming Changes
+
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  golint:
+    name: Run Linter and Vet
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Go 1.18
+        uses: actions/setup-go@v4
+        with:
+          go-version: 1.18.9
+
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: golangci-lint
+        uses: golangci/golangci-lint-action@v3
+        with:
+          # Optional: version of golangci-lint to use in form of v1.2 or v1.2.3 or `latest` to use the latest version
+          version: v1.52.2
+
+          # Optional: working directory, useful for monorepos
+          # working-directory: somedir
+
+          # Optional: golangci-lint command line arguments.
+          args: --timeout=5m0s
+
+          # Optional: show only new issues if it's a pull request. The default value is `false`.
+          # only-new-issues: true
+
+          # Optional: if set to true then the all caching functionality will be complete disabled,
+          #           takes precedence over all other caching options.
+          # skip-cache: true
+
+          # Optional: if set to true then the action don't cache or restore ~/go/pkg.
+          # skip-pkg-cache: true
+
+          # Optional: if set to true then the action don't cache or restore ~/.cache/go-build.
+          # skip-build-cache: true
+
+  tests:
+    name: Run pkg tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Go 1.18
+        uses: actions/setup-go@v4
+        with:
+          go-version: 1.18.9
+
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Set up ginkgo
+        run: make install-tools
+
+      - name: Run package tests
+        run: ginkgo pkg/...
+
+  yamllint:
+    name: Lint YAML files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: yaml-lint
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          no_warnings: true
+
+  licenses:
+    name: Ensure License Headers
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Go 1.18
+        uses: actions/setup-go@v4
+        with:
+          go-version: 1.18.9
+
+      - name: Check out code
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Install Apache License Eye
+        run: go install github.com/apache/skywalking-eyes/cmd/license-eye@latest
+
+      - name: Check for missing License headers on code files
+        run: license-eye header check

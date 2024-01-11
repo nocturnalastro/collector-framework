@@ -1,0 +1,24 @@
+header:
+  license:
+    spdx-id: GPL-2.0-or-later
+    copyright-owner: Red Hat, Inc.
+    content: "SPDX-License-Identifier: GPL-2.0-or-later"
+    pattern: "SPDX-License-Identifier: GPL-2.0-or-later"
+
+  paths:
+    - '**/**.go'
+
+  # paths-ignore:
+  #   - '.github/**'
+  #   - '**/*.md'
+  #   - '**/.*'
+  #   - 'LICENSE'
+  #   - 'NOTICE'
+
+
+  comment: never
+
+# If you don't want to check dependencies' license compatibility, remove the following part
+dependency:
+  files:
+    - go.mod
