@@ -11,7 +11,6 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/nocturnalastro/collection-framework/pkg/clients"
 	"github.com/nocturnalastro/collection-framework/pkg/collectors/contexts"
 	"github.com/nocturnalastro/collection-framework/pkg/collectors/devices"
 	"github.com/nocturnalastro/collection-framework/pkg/utils"
@@ -20,7 +19,6 @@ import (
 
 type DevInfoCollector struct {
 	*ExecCollector
-	ctx           clients.ExecContext
 	devInfo       *devices.PTPDeviceInfo
 	quit          chan os.Signal
 	erroredPolls  chan PollResult

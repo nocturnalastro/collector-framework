@@ -6,7 +6,6 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nocturnalastro/collection-framework/pkg/clients"
 	"github.com/nocturnalastro/collection-framework/pkg/collectors/contexts"
 	"github.com/nocturnalastro/collection-framework/pkg/collectors/devices"
 	"github.com/nocturnalastro/collection-framework/pkg/utils"
@@ -19,7 +18,6 @@ var (
 
 type GPSCollector struct {
 	*ExecCollector
-	ctx           clients.ExecContext
 	interfaceName string
 }
 

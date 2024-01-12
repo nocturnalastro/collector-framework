@@ -93,7 +93,7 @@ func NewExecCollector(
 	callback callbacks.Callback,
 	ctx clients.ExecContext,
 ) *ExecCollector {
-	return &ExecCollector{
+	execCollector := ExecCollector{
 		baseCollector: NewBaseCollector(
 			pollInterval,
 			isAnnouncer,
@@ -101,6 +101,7 @@ func NewExecCollector(
 		),
 		ctx: ctx,
 	}
+	return &execCollector
 }
 
 type ApiCollector struct {
