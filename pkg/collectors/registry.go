@@ -11,8 +11,8 @@ type collectonBuilderFunc func(*CollectionConstructor) (Collector, error)
 type collectorInclusionType int
 
 const (
-	required collectorInclusionType = iota
-	optional
+	Required collectorInclusionType = iota
+	Optional
 )
 
 type CollectorRegistry struct {
@@ -34,9 +34,9 @@ func (reg *CollectorRegistry) register(
 ) {
 	reg.registry[collectorName] = builderFunc
 	switch inclusionType {
-	case required:
+	case Required:
 		reg.required = append(reg.required, collectorName)
-	case optional:
+	case Optional:
 		reg.optional = append(reg.optional, collectorName)
 	default:
 		log.Panic("Incorrect collector inclusion type")

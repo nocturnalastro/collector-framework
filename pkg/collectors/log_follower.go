@@ -337,5 +337,5 @@ func NewPTPLogsCollector(constructor *CollectionConstructor) (Collector, error) 
 
 func init() {
 	// Make log opt in as in may lose some data.
-	RegisterCollector(LogsCollectorName, NewPTPLogsCollector, optional)
+	RegisterCollector(LogsCollectorName, NewPTPLogsCollector, Optional)
 }

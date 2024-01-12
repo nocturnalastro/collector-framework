@@ -69,5 +69,5 @@ func NewPMCCollector(constructor *CollectionConstructor) (Collector, error) {
 }
 
 func init() {
-	RegisterCollector(PMCCollectorName, NewPMCCollector, optional)
+	RegisterCollector(PMCCollectorName, NewPMCCollector, 7)
 }
