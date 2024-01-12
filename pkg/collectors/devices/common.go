@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/redhat-partner-solutions/collection-framework/pkg/clients"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/utils"
+	"github.com/nocturnalastro/collection-framework/pkg/clients"
+	"github.com/nocturnalastro/collection-framework/pkg/utils"
 )
 
 var dateCmd *clients.Cmd

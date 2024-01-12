@@ -11,7 +11,7 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/redhat-partner-solutions/collection-framework/pkg/loglines"
+	"github.com/nocturnalastro/collection-framework/pkg/loglines"
 )
 
 //nolint:unparam // its only one param for now but we might want more later

@@ -8,7 +8,7 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/redhat-partner-solutions/collection-framework/pkg/clients"
+	"github.com/nocturnalastro/collection-framework/pkg/clients"
 )
 
 var _ = Describe("Cmd", func() {

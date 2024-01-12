@@ -7,7 +7,7 @@ import (
 
 	corev1 "k8s.io/api/core/v1"
 
-	"github.com/redhat-partner-solutions/collection-framework/pkg/clients"
+	"github.com/nocturnalastro/collection-framework/pkg/clients"
 )
 
 const (

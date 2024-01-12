@@ -5,8 +5,8 @@ package validations
 import (
 	"errors"
 
-	"github.com/redhat-partner-solutions/collection-framework/pkg/collectors/devices"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/utils"
+	"github.com/nocturnalastro/collection-framework/pkg/collectors/devices"
+	"github.com/nocturnalastro/collection-framework/pkg/utils"
 )
 
 const (

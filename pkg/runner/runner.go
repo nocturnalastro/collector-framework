@@ -11,10 +11,10 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/redhat-partner-solutions/collection-framework/pkg/callbacks"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/clients"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/collectors"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/utils"
+	"github.com/nocturnalastro/collection-framework/pkg/callbacks"
+	"github.com/nocturnalastro/collection-framework/pkg/clients"
+	"github.com/nocturnalastro/collection-framework/pkg/collectors"
+	"github.com/nocturnalastro/collection-framework/pkg/utils"
 )
 
 const (

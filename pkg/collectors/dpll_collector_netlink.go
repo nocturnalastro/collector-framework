@@ -8,10 +8,10 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/redhat-partner-solutions/collection-framework/pkg/clients"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/collectors/contexts"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/collectors/devices"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/utils"
+	"github.com/nocturnalastro/collection-framework/pkg/clients"
+	"github.com/nocturnalastro/collection-framework/pkg/collectors/contexts"
+	"github.com/nocturnalastro/collection-framework/pkg/collectors/devices"
+	"github.com/nocturnalastro/collection-framework/pkg/utils"
 )
 
 type DPLLNetlinkCollector struct {

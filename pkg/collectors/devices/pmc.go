@@ -9,9 +9,9 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/redhat-partner-solutions/collection-framework/pkg/callbacks"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/clients"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/fetcher"
+	"github.com/nocturnalastro/collection-framework/pkg/callbacks"
+	"github.com/nocturnalastro/collection-framework/pkg/clients"
+	"github.com/nocturnalastro/collection-framework/pkg/fetcher"
 )
 
 type PMCInfo struct {

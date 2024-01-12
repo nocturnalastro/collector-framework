@@ -6,9 +6,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/redhat-partner-solutions/collection-framework/pkg/callbacks"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/utils"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/validations"
+	"github.com/nocturnalastro/collection-framework/pkg/callbacks"
+	"github.com/nocturnalastro/collection-framework/pkg/utils"
+	"github.com/nocturnalastro/collection-framework/pkg/validations"
 )
 
 type resType int

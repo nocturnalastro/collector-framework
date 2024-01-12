@@ -8,7 +8,7 @@ import (
 
 	"golang.org/x/mod/semver"
 
-	"github.com/redhat-partner-solutions/collection-framework/pkg/collectors/devices"
+	"github.com/nocturnalastro/collection-framework/pkg/collectors/devices"
 )
 
 const (

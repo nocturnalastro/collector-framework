@@ -5,9 +5,9 @@ package collectors //nolint:dupl // new collector
 import (
 	"fmt"
 
-	"github.com/redhat-partner-solutions/collection-framework/pkg/collectors/contexts"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/collectors/devices"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/utils"
+	"github.com/nocturnalastro/collection-framework/pkg/collectors/contexts"
+	"github.com/nocturnalastro/collection-framework/pkg/collectors/devices"
+	"github.com/nocturnalastro/collection-framework/pkg/utils"
 )
 
 const (

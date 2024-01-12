@@ -12,9 +12,9 @@ import (
 
 	"k8s.io/client-go/tools/remotecommand"
 
-	"github.com/redhat-partner-solutions/collection-framework/pkg/clients"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/collectors/devices"
-	"github.com/redhat-partner-solutions/collection-framework/testutils"
+	"github.com/nocturnalastro/collection-framework/pkg/clients"
+	"github.com/nocturnalastro/collection-framework/pkg/collectors/devices"
+	"github.com/nocturnalastro/collection-framework/testutils"
 )
 
 var _ = Describe("GetGPSNav", func() {

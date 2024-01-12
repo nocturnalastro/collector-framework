@@ -3,7 +3,7 @@
 package main
 
 import (
-	"github.com/redhat-partner-solutions/collection-framework/pkg/cmd"
+	"github.com/nocturnalastro/collection-framework/pkg/cmd"
 )
 
 func main() {

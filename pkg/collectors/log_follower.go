@@ -18,10 +18,10 @@ import (
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/redhat-partner-solutions/collection-framework/pkg/clients"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/collectors/contexts"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/loglines"
-	"github.com/redhat-partner-solutions/collection-framework/pkg/utils"
+	"github.com/nocturnalastro/collection-framework/pkg/clients"
+	"github.com/nocturnalastro/collection-framework/pkg/collectors/contexts"
+	"github.com/nocturnalastro/collection-framework/pkg/loglines"
+	"github.com/nocturnalastro/collection-framework/pkg/utils"
 )
 
 const (

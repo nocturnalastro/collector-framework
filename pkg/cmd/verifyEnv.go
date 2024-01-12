@@ -5,7 +5,7 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/redhat-partner-solutions/collection-framework/pkg/verify"
+	"github.com/nocturnalastro/collection-framework/pkg/verify"
 )
 
 var envCmd = &cobra.Command{

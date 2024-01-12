@@ -5,7 +5,7 @@ package fetcher
 import (
 	"fmt"
 
-	"github.com/redhat-partner-solutions/collection-framework/pkg/clients"
+	"github.com/nocturnalastro/collection-framework/pkg/clients"
 )
 
 type AddCommandArgs struct {

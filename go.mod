@@ -1,4 +1,4 @@
-module github.com/redhat-partner-solutions/collection-framework
+module github.com/nocturnalastro/collection-framework
 
 go 1.18
 
