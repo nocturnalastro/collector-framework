@@ -8,8 +8,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/nocturnalastro/collection-framework/pkg/collectors/contexts"
-	"github.com/nocturnalastro/collection-framework/pkg/collectors/devices"
+	"github.com/nocturnalastro/collector-framework/pkg/collectors/contexts"
+	"github.com/nocturnalastro/collector-framework/pkg/collectors/devices"
 )
 
 const (

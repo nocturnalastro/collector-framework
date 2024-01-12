@@ -45,7 +45,7 @@ go build
 Run the following command  (check help string for more details):
 
 ```shell
-./collection-framework env verify --interface="<ptp interface>" --kubeconfig="${KUBECONFIG}"
+./collector-framework env verify --interface="<ptp interface>" --kubeconfig="${KUBECONFIG}"
 ```
 
 ### Running Collectors
@@ -53,7 +53,7 @@ Run the following command  (check help string for more details):
 Run the following command  (check help string for more details):
 
 ```shell
-./collection-framework collect --interface="<ptp interface>" --kubeconfig="${KUBECONFIG}"
+./collector-framework collect --interface="<ptp interface>" --kubeconfig="${KUBECONFIG}"
 ```
 
 ### Fetching logs

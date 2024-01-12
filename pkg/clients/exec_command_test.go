@@ -14,8 +14,8 @@ import (
 	fakeK8s "k8s.io/client-go/kubernetes/fake"
 	"k8s.io/client-go/tools/remotecommand"
 
-	"github.com/nocturnalastro/collection-framework/pkg/clients"
-	"github.com/nocturnalastro/collection-framework/testutils"
+	"github.com/nocturnalastro/collector-framework/pkg/clients"
+	"github.com/nocturnalastro/collector-framework/testutils"
 )
 
 var notATestPod = &v1.Pod{

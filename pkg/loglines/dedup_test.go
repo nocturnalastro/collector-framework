@@ -11,7 +11,7 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/nocturnalastro/collection-framework/pkg/loglines"
+	"github.com/nocturnalastro/collector-framework/pkg/loglines"
 )
 
 //nolint:unparam // its only one param for now but we might want more later
@@ -128,6 +128,17 @@ var _ = Describe("Dedup AB tests", func() {
 			dl1, dl2 := loglines.DedupAB(secondSet, lineSlice.Lines[:300])
 			Expect(dl1).To(BeEmpty())
 			Expect(dl2).To(Equal(lineSlice.Lines[:300]))
+		})
+	})
+	When("DedupAB is called on two line slices with second slice is overlapping but longer", func() { //nolint:dupl // don't want to dupl tests
+		It("should return an empty list and a complete set of the lines", func() {
+			lineSlice, err := loadLinesFromFile("test_files/all.log", 0)
+			if err != nil {
+				Panic()
+			}
+			dl1, dl2 := loglines.DedupAB(lineSlice.Lines[:100], lineSlice.Lines)
+			Expect(dl1).To(BeEmpty())
+			Expect(dl2).To(Equal(lineSlice.Lines))
 		})
 	})
 })

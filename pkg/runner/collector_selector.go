@@ -7,7 +7,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/nocturnalastro/collection-framework/pkg/collectors"
+	"github.com/nocturnalastro/collector-framework/pkg/collectors"
 )
 
 var (

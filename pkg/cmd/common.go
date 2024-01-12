@@ -5,7 +5,7 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/nocturnalastro/collection-framework/pkg/utils"
+	"github.com/nocturnalastro/collector-framework/pkg/utils"
 )
 
 var (

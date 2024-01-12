@@ -9,7 +9,7 @@ import (
 
 	"golang.org/x/mod/semver"
 
-	"github.com/nocturnalastro/collection-framework/pkg/utils"
+	"github.com/nocturnalastro/collector-framework/pkg/utils"
 )
 
 const (

@@ -18,10 +18,10 @@ import (
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/nocturnalastro/collection-framework/pkg/clients"
-	"github.com/nocturnalastro/collection-framework/pkg/collectors/contexts"
-	"github.com/nocturnalastro/collection-framework/pkg/loglines"
-	"github.com/nocturnalastro/collection-framework/pkg/utils"
+	"github.com/nocturnalastro/collector-framework/pkg/clients"
+	"github.com/nocturnalastro/collector-framework/pkg/collectors/contexts"
+	"github.com/nocturnalastro/collector-framework/pkg/loglines"
+	"github.com/nocturnalastro/collector-framework/pkg/utils"
 )
 
 const (

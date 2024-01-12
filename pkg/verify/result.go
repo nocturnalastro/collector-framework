@@ -6,9 +6,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nocturnalastro/collection-framework/pkg/callbacks"
-	"github.com/nocturnalastro/collection-framework/pkg/utils"
-	"github.com/nocturnalastro/collection-framework/pkg/validations"
+	"github.com/nocturnalastro/collector-framework/pkg/callbacks"
+	"github.com/nocturnalastro/collector-framework/pkg/utils"
+	"github.com/nocturnalastro/collector-framework/pkg/validations"
 )
 
 type resType int

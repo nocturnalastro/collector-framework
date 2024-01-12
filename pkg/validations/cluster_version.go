@@ -13,7 +13,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/dynamic"
 
-	"github.com/nocturnalastro/collection-framework/pkg/clients"
+	"github.com/nocturnalastro/collector-framework/pkg/clients"
 )
 
 const (

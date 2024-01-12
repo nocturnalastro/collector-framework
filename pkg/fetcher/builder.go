@@ -5,7 +5,7 @@ package fetcher
 import (
 	"fmt"
 
-	"github.com/nocturnalastro/collection-framework/pkg/clients"
+	"github.com/nocturnalastro/collector-framework/pkg/clients"
 )
 
 type AddCommandArgs struct {

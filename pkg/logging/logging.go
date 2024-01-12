@@ -7,7 +7,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/nocturnalastro/collection-framework/pkg/utils"
+	"github.com/nocturnalastro/collector-framework/pkg/utils"
 )
 
 // SetupLogging will configure the output stream and the level

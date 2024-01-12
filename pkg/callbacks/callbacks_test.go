@@ -10,7 +10,7 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/nocturnalastro/collection-framework/pkg/callbacks"
+	"github.com/nocturnalastro/collector-framework/pkg/callbacks"
 )
 
 func NewTestFile() *testFile {

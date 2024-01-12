@@ -75,7 +75,7 @@ package collectors
 import (
 	"fmt"
 
-	"github.com/nocturnalastro/collection-framework/pkg/callbacks"
+	"github.com/nocturnalastro/collector-framework/pkg/callbacks"
 )
 const (
 	AnnouncementCollectorName = "MyCustomerAnouncer"

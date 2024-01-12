@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/nocturnalastro/collection-framework/pkg/callbacks"
-	"github.com/nocturnalastro/collection-framework/pkg/clients"
-	"github.com/nocturnalastro/collection-framework/pkg/utils"
+	"github.com/nocturnalastro/collector-framework/pkg/callbacks"
+	"github.com/nocturnalastro/collector-framework/pkg/clients"
+	"github.com/nocturnalastro/collector-framework/pkg/utils"
 )
 
 type Collector interface {

@@ -8,7 +8,7 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	"github.com/nocturnalastro/collection-framework/pkg/logging"
+	"github.com/nocturnalastro/collector-framework/pkg/logging"
 )
 
 var (

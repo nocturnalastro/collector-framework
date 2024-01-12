@@ -8,10 +8,10 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/nocturnalastro/collection-framework/pkg/clients"
-	"github.com/nocturnalastro/collection-framework/pkg/collectors/contexts"
-	"github.com/nocturnalastro/collection-framework/pkg/collectors/devices"
-	"github.com/nocturnalastro/collection-framework/pkg/utils"
+	"github.com/nocturnalastro/collector-framework/pkg/clients"
+	"github.com/nocturnalastro/collector-framework/pkg/collectors/contexts"
+	"github.com/nocturnalastro/collector-framework/pkg/collectors/devices"
+	"github.com/nocturnalastro/collector-framework/pkg/utils"
 )
 
 type DPLLNetlinkCollector struct {

@@ -150,10 +150,10 @@ func DedupAB(a, b []*ProcessedLine) ([]*ProcessedLine, []*ProcessedLine) {
 		return handleIncompleteOverlap(a, b)
 	}
 
-	if index := findFirstIssueIndex(a[bFirstLineIndex:], b); index >= 0 {
+	index := findFirstIssueIndex(a[bFirstLineIndex:], b)
+	if index >= 0 {
 		return handleIncompleteOverlap(a, b)
 	}
-
 	return a[:bFirstLineIndex], b
 }
 
@@ -197,7 +197,6 @@ func DedupLineSlices(lineSlices []*LineSlice) (*LineSlice, *LineSlice) {
 
 	resLines := dedupedLines
 	reference := MakeNewCombinedSlice(dedupedLines, lastLines)
-
 	for index := len(lineSlices) - 3; index >= 0; index-- {
 		aLines, bLines := DedupAB(lineSlices[index].Lines, reference)
 		resLines = MakeNewCombinedSlice(aLines, resLines)

@@ -12,9 +12,9 @@ import (
 
 	"k8s.io/client-go/tools/remotecommand"
 
-	"github.com/nocturnalastro/collection-framework/pkg/clients"
-	"github.com/nocturnalastro/collection-framework/pkg/collectors/devices"
-	"github.com/nocturnalastro/collection-framework/testutils"
+	"github.com/nocturnalastro/collector-framework/pkg/clients"
+	"github.com/nocturnalastro/collector-framework/pkg/collectors/devices"
+	"github.com/nocturnalastro/collector-framework/testutils"
 )
 
 var _ = Describe("GetGPSNav", func() {

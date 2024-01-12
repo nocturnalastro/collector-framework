@@ -5,8 +5,8 @@ package validations
 import (
 	"errors"
 
-	"github.com/nocturnalastro/collection-framework/pkg/collectors/devices"
-	"github.com/nocturnalastro/collection-framework/pkg/utils"
+	"github.com/nocturnalastro/collector-framework/pkg/collectors/devices"
+	"github.com/nocturnalastro/collector-framework/pkg/utils"
 )
 
 const (

@@ -14,9 +14,9 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	"github.com/nocturnalastro/collection-framework/pkg/collectors"
-	"github.com/nocturnalastro/collection-framework/pkg/runner"
-	"github.com/nocturnalastro/collection-framework/pkg/utils"
+	"github.com/nocturnalastro/collector-framework/pkg/collectors"
+	"github.com/nocturnalastro/collector-framework/pkg/runner"
+	"github.com/nocturnalastro/collector-framework/pkg/utils"
 )
 
 const (

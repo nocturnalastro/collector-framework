@@ -14,7 +14,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/nocturnalastro/collection-framework/pkg/utils"
+	"github.com/nocturnalastro/collector-framework/pkg/utils"
 )
 
 const (
@@ -244,6 +244,9 @@ func (gens *Generations) flush(generations [][]*LineSlice) (*LineSlice, *LineSli
 }
 
 func MakeSliceFromLines(lines []*ProcessedLine, generation uint32) *LineSlice {
+	if len(lines) == 0 {
+		return &LineSlice{Generation: generation}
+	}
 	return &LineSlice{
 		Lines:      lines,
 		start:      lines[0].Timestamp,

@@ -3,7 +3,7 @@
 package main
 
 import (
-	"github.com/nocturnalastro/collection-framework/pkg/cmd"
+	"github.com/nocturnalastro/collector-framework/pkg/cmd"
 )
 
 func main() {

@@ -9,7 +9,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/nocturnalastro/collection-framework/pkg/clients"
+	"github.com/nocturnalastro/collector-framework/pkg/clients"
 )
 
 type PostProcessFuncType func(map[string]string) (map[string]any, error)

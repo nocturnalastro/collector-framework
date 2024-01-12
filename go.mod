@@ -1,4 +1,4 @@
-module github.com/nocturnalastro/collection-framework
+module github.com/nocturnalastro/collector-framework
 
 go 1.18
 

@@ -3,7 +3,7 @@
 package validations
 
 import (
-	"github.com/nocturnalastro/collection-framework/pkg/collectors/devices"
+	"github.com/nocturnalastro/collector-framework/pkg/collectors/devices"
 )
 
 const (

@@ -10,7 +10,7 @@ import (
 	fakeK8s "k8s.io/client-go/kubernetes/fake"
 	"k8s.io/client-go/rest"
 
-	"github.com/nocturnalastro/collection-framework/pkg/clients"
+	"github.com/nocturnalastro/collector-framework/pkg/clients"
 )
 
 const kubeconfigPath string = "test_files/kubeconfig"
