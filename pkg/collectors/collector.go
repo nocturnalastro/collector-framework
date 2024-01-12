@@ -37,7 +37,7 @@ type PollResult struct {
 }
 
 type baseCollector struct {
-	callback     callbacks.Callback
+	Callback     callbacks.Callback
 	pollInterval *LockedInterval
 	isAnnouncer  bool
 	running      bool
@@ -75,7 +75,7 @@ func NewBaseCollector(
 	callback callbacks.Callback,
 ) *baseCollector {
 	return &baseCollector{
-		callback:     callback,
+		Callback:     callback,
 		isAnnouncer:  isAnnouncer,
 		running:      false,
 		pollInterval: NewLockedInterval(pollInterval),
@@ -104,6 +104,10 @@ func NewExecCollector(
 	return &execCollector
 }
 
+func (col *ExecCollector) GetContext() clients.ExecContext {
+	return col.ctx
+}
+
 type ApiCollector struct {
 	*baseCollector
 	ctx clients.APIContext
@@ -123,6 +127,10 @@ func NewApiCollector(
 		),
 		ctx: ctx,
 	}
+}
+
+func (col *ApiCollector) GetContext() clients.APIContext {
+	return col.ctx
 }
 
 type LockedInterval struct {

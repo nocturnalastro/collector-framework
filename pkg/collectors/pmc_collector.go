@@ -24,7 +24,7 @@ func (pmc *PMCCollector) poll() error {
 	if err != nil {
 		return fmt.Errorf("failed to fetch  %s %w", PMCInfo, err)
 	}
-	err = pmc.callback.Call(&gmSetting, PMCInfo)
+	err = pmc.Callback.Call(&gmSetting, PMCInfo)
 	if err != nil {
 		return fmt.Errorf("callback failed %w", err)
 	}

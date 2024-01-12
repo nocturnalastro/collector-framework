@@ -34,7 +34,7 @@ func (dpll *DPLLFilesystemCollector) poll() error {
 	if err != nil {
 		return fmt.Errorf("failed to fetch %s %w", DPLLInfo, err)
 	}
-	err = dpll.callback.Call(&dpllInfo, DPLLInfo)
+	err = dpll.Callback.Call(&dpllInfo, DPLLInfo)
 	if err != nil {
 		return fmt.Errorf("callback failed %w", err)
 	}

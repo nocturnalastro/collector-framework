@@ -82,7 +82,7 @@ func (ptpDev *DevInfoCollector) poll() error {
 		devInfo = ptpDev.devInfo
 	}
 
-	err := ptpDev.callback.Call(devInfo, DeviceInfo)
+	err := ptpDev.Callback.Call(devInfo, DeviceInfo)
 	if err != nil {
 		return fmt.Errorf("callback failed %w", err)
 	}

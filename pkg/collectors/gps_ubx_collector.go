@@ -26,7 +26,7 @@ func (gps *GPSCollector) poll() error {
 	if err != nil {
 		return fmt.Errorf("failed to fetch  %s %w", gpsNavKey, err)
 	}
-	err = gps.callback.Call(&gpsNav, gpsNavKey)
+	err = gps.Callback.Call(&gpsNav, gpsNavKey)
 	if err != nil {
 		return fmt.Errorf("callback failed %w", err)
 	}

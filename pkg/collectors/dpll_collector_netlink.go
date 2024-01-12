@@ -59,7 +59,7 @@ func (dpll *DPLLNetlinkCollector) poll() error {
 	if err != nil {
 		return fmt.Errorf("failed to fetch %s %w", DPLLNetlinkInfo, err)
 	}
-	err = dpll.callback.Call(&dpllInfo, DPLLNetlinkInfo)
+	err = dpll.Callback.Call(&dpllInfo, DPLLNetlinkInfo)
 	if err != nil {
 		return fmt.Errorf("callback failed %w", err)
 	}
